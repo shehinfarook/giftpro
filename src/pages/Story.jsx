@@ -12,7 +12,7 @@ export default function Story() {
       <p className="mb-3">99% sweet, 1% dangerous 😭</p>
       <p className="mb-6">Still… my favorite person ❤️</p>
 
-      <hr className="my-6"/>
+      {/* <hr className="my-6"/> */}
 
       <p className="mb-3">
         Jokes aside… you actually mean a lot to me.
