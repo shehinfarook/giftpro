@@ -8,26 +8,26 @@ export default function Gallery() {
 
       <h1 className="text-2xl font-bold mb-6">Moments 📸</h1>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-4">
         <div className="bg-white p-4 rounded shadow">
           <img src="/iconic.jpg" alt="" />
           <img src="/schl-uni.jpg" alt="" />
-          <p>kandaal ndor paavam...ahangaari🧐</p>
+          <p>kandaal ndor paavam... <br /> ahangaari🧐</p>
         </div>
 
-        <div className="bg-white p-4 rounded shadow">
+        {/* <div className="bg-white p-4 rounded shadow">
           <img src="/look.jpg" alt="" className="" />
           <br />
           <br />
           <p>But still my favorite 😌❤️</p>
-        </div>
+        </div> */}
       </div>
 
       <button
-        onClick={() => navigate("/game")}
+        onClick={() => navigate("/galleryy")}
         className="mt-6 bg-pink-500 text-white px-6 py-2 rounded-full"
       >
-        Continue 😌
+        next
       </button>
 
     </div>

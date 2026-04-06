@@ -2,7 +2,7 @@ import Confetti from "react-confetti";
 
 export default function Final() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-pink-100 text-center">
+    <div className="h-screen flex flex-col items-center justify-center bg-[url('/final-bg.jpg')] bg-contain bg-no-repeat md:bg-cover bg-center text-center">
 
       <Confetti />
 

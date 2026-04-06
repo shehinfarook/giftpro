@@ -4,7 +4,7 @@ export default function Story() {
   const navigate = useNavigate();
 
   return (
-    <div className="p-10 bg-white min-h-screen text-center">
+    <div className="p-10 bg-[url('/bg-1.avif')] min-h-screen text-center">
 
       <h1 className="text-2xl font-bold mb-6">About You 😏</h1>
 
