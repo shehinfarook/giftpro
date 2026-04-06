@@ -4,7 +4,7 @@ export default function Story() {
   const navigate = useNavigate();
 
   return (
-    <div className="p-10 bg-[url('/bg-1.avif')] min-h-screen text-center">
+    <div className="p-10 bg-pink-200 sm:bg-contain md:bg-cover bg-center bg-no-repeat min-h-screen text-center">
 
       <h1 className="text-2xl font-bold mb-6">About You 😏</h1>
 
@@ -21,7 +21,8 @@ export default function Story() {
       <p className="mb-6">
         You make normal days feel special… and bad days easier.
       </p>
-
+      <br />
+      <br />
       <button
         onClick={() => navigate("/gallery")}
         className="bg-pink-500 text-white px-6 py-2 rounded-full"

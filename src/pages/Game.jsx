@@ -17,7 +17,7 @@ export default function Game() {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-pink-100 overflow-hidden">
+    <div className="h-screen flex flex-col items-center justify-center bg-pink-200 overflow-hidden">
 
       <h1 className="text-xl mb-6 text-center font-bold">
         Do you love me? 😌

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Story from "./pages/Story";
@@ -12,12 +12,20 @@ import Galleryy from './pages/Galleryy';
 function App() {
   const audioRef = useRef(null);
 
-  const startMusic = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+  const startMusic = () => audioRef.current?.play();
 
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden) audioRef.current?.pause();
+      else audioRef.current?.play();
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => document.removeEventListener("visibilitychange", handleVisibility);
+  }, []);
+      
+    
+    
   return (
     <>
        <audio ref={audioRef} loop>
