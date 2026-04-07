@@ -26,7 +26,7 @@ export default function Game() {
       <div className="relative flex gap-4">
         <button
           onClick={() => navigate("/final")}
-          className="bg-green-500 text-white px-6 py-2 rounded"
+          className="bg-green-500 text-white px-6 py-2 rounded-[30px]" 
         >
           Yes ❤️
         </button>
@@ -35,7 +35,7 @@ export default function Game() {
           onTouchStart={moveButton}   
           onMouseEnter={moveButton}
           style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}
-          className="bg-red-500 text-white px-6 py-2 rounded"
+          className="bg-red-500 text-white px-6 py-2 rounded-[30px]"
         >
           No 😭
         </button>
